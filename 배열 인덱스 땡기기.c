@@ -16,7 +16,7 @@ int main(void)
 	printf("배열의 크기를 입력하시오 : ");
 	scanf("%d", &n); //배열 크기입력
 
-	a = (int *)malloc(n * sizeof(int)); //동적메모리할당
+	a = (int *)malloc(n * sizeof(int)); //동적메모리할당, 정수 사이즈
 
 	printf("초기배열 : [");
 
