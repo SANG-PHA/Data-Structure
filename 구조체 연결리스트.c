@@ -4,38 +4,38 @@
 typedef struct linkedNum{
 	int val;
 	struct linkedNum *next;
-}numlist; //a
+}numlist; // a
 
 int main(void)
 {
-	numlist list; //b
+	numlist list; // b
 
 	list.val = 10;
-	list.next = NULL; //c
+	list.next = NULL; // c
 
-	numlist *p, *q; //d
+	numlist *p, *q; // d
 
-	p = (numlist*)malloc(sizeof(numlist)); //e
+	p = (numlist*)malloc(sizeof(numlist)); // e
 
 	(*p).val = 20;
-	(*p).next = NULL; //f
+	(*p).next = NULL; // f
 
-	q = (numlist*)malloc(sizeof(numlist)); //g
+	q = (numlist*)malloc(sizeof(numlist)); // g
 
 	q->val = 30;
-	q->next = NULL; //h
+	q->next = NULL; // h
 
-	p->next = q; //i
+	p->next = q; // i
 
-	q->next = &list; //j
+	q->next = &list; // j
 
-	//printf("%d\n", p->val); //k
+	//printf("%d\n", p->val); // k
 
 	do
 	{
 		printf("%d\n", p->val);
 		p = p->next;
-	}while (p != NULL); //l
+	}while (p != NULL); // l
 
 
 	getch();
